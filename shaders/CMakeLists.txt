@@ -1,0 +1,5 @@
+set(ASSIGNMENT_SHADER_LIST
+    "${ASSIGNMENT_SHADER_ROOT}/UniformMatrices.glsl"
+    "${ASSIGNMENT_SHADER_ROOT}/Node.vs.glsl"
+    "${ASSIGNMENT_SHADER_ROOT}/Node.fs.glsl"
+    PARENT_SCOPE)

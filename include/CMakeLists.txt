@@ -1,0 +1,14 @@
+set(INCLUDE_LIST
+    "${ASSIGNMENT_INCLUDE_ROOT}/node.hpp"
+    "${ASSIGNMENT_INCLUDE_ROOT}/line.hpp"
+    "${ASSIGNMENT_INCLUDE_ROOT}/scene.hpp"
+    )
+
+set(SHADER_INCLUDE "${ASSIGNMENT_INCLUDE_ROOT}/AssignmentPaths.hpp")
+configure_file("${ASSIGNMENT_INCLUDE_ROOT}/AssignmentPaths.hpp.in"
+    ${SHADER_INCLUDE})
+
+set(ASSIGNMENT_INCLUDE_LIST
+    ${INCLUDE_LIST}
+    ${SHADER_INCLUDE}
+    PARENT_SCOPE)
